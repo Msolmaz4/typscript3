@@ -3,15 +3,17 @@ import  { Container } from 'react-bootstrap'
 import Store from './pages/Store'
 import About from './pages/About'
 import Home from './pages/Home'
+import Navbar from './commponents/Navbar'
 
 
 function App() {
   
 
   return (
-    <div className="App">
-      <Container>
-      <h2>hallo</h2>
+    <div >
+      <Navbar/>
+      <Container className='mb-4'>
+      
       <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/store' element={<Store/>}/>
